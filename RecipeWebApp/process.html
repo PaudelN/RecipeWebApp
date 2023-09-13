@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Web Application</title>
+    <!--Icons-->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--Normalize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+    <!--Font Awesome-->
+   <link
+    rel="stylesheet"
+    hef="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    
+    <!--Navbar start-->
+    <nav class="navbar">
+        <div class="nav-center">
+            <!--header-->
+            <div class="nav-header">
+                <a href="index.html" class="nav-logo">
+                    <img src="Screenshot 2023-09-02 163851.png" alt="logo">
+                </a>
+                <button type="button" class="btn nav-btn">
+                    <i class="bx bx-menu" id="menu-icon"></i>
+                </button>
+            </div>
+            <!--Links-->
+            <div class="nav-links show-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="recipe.html" class="nav-link">Recipe</a>
+                <a href="process.html" class="nav-link">Process</a>
+                <a href="about.html" class="nav-link">About</a>
+                <div class="nav-link contact-link">
+                    <a href="contact.html" class="btn">Contact</a>
+                  </div>
+
+            </div>
+        </div>
+    </nav>
+    <!--Navigation end-->
+    <!--main-->
+    <main class="page">
+        <div class="search-bar">
+            <div class="search">
+                <input type="text" id="search-input" placeholder="Search recipes..">
+                <button type="submit" class="search-Button" onclick="Search()" > Search </button>
+
+                <a  
+                class="addProduct" target="_blank" href = './addProduct.html'>Click here to add product
+                   <img class="upload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAASpJREFUSEvtlL9KA0EQh78rgk9gKaRPYyUoAZMnSaoEOy21MYIhZdJqIeZJkiIQsLKxTnqfQCyUgVncLOju3h8vxQ4suyxzv29n5mYyarKsJi4J/G+ZL5Lqgb7yMc9r84JPgJUC28BLLDwP+BB4A2QXewdaugfzY8ENjVQitk0ilsg/Q8mx4AfA1NZlSK2HVYB7wLNHuA/MQ+AxEZ8CByp6DEz1fAW86vkDWJcNtvU6wEIvusAyBGb72BE3AVliPqFYsPiLbXXtzOoRcKsOvhLEgr9U9w4QTgLvf6qlnWZat0urnX77uUurcWz3JPBOO90AY6vfYtP5l7+ZD8KYuH18HjCxij7mzMxyd0JdANfAUVGC8/0GuAeezL1vNJbM/5FL4MpS6wrXlupvNdhCH6fTj0MAAAAASUVORK5CYII="/>
+               </a>
+                </div>
+                
+            </div>
+
+        <div class="main">
+            <div class="search-result">
+
+            </div>
+        
+        </div>
+                <div class="process">
+                    <div id="data-container" class="hh">
+
+
+                    </div>
+                </div>
+    </main>
+    <!--end main-->
+    <!--footer-->
+    <footer class="page-footer">
+        <p> &copy; <span id="date"> 2023 </span>
+            <span class="footer-logo">
+            </span>
+            <span class="footer-logo">Recipe book by Nukesh Paudel</span>
+        
+        </p>
+    </footer>
+    
+    
+    
+    
+    <script src="script.js"></script>
+  
+    
+</body>
+</html>
